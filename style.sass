@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+$font: "Roboto", sans-serif
+$background: #728DA5
+$column: #133453
+$text: #041F37
+
+/* Board */
+body
+	font-family: $font
+	background-color: $background
+
+h1
+	text-align: center
+	color: $text
+
+/* Column */
+h2
+	text-align: center
+	text-decoration: underline
+	color: $text
+
+.column-container
+	display: flex
+
+.column
+	flex: 1
+	padding: 20px
+	background-color: $column
+	margin: 20px
+	min-height: 80vh
+	position: relative
+
+.create-column
+	margin: 0 20px
+	padding: 7px
+	background-color: $background
+
+/* Card */
+ul
+	margin: 0
+	padding: 0
+
+	li
+		list-style: none
+		background-color: #FFF
+		position: relative
+		min-height: 15vh
+
+.btn-delete
+	position: absolute
+	top: 10px
+	right: 10px
+	background-color: $background
+
+.card-description
+	padding: 15px
+
+.add-card
+	padding: 7px
+	background-color: $background
