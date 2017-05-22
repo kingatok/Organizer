@@ -17,6 +17,6 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-sass');
 
 // Default task(s).
-grunt.registerTask('default', ["sass"]);
+grunt.registerTask('default', ['sass']);
 
 };

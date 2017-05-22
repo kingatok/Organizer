@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto')
 $font: "Roboto", sans-serif
-$background: #728DA5
-$column: #133453
-$text: #041F37
+$btn-background: #FFF
+$column: #FFF
+$text: #000
+$card: #FCEA58
+$background: #CCC
 
 /* Board */
 body
@@ -12,12 +14,19 @@ body
 h1
 	text-align: center
 	color: $text
+	text-transform: uppercase
+
+.buttons
+	background-color: $btn-background
+	text-transform: uppercase
+	cursor: pointer
 
 /* Column */
 h2
 	text-align: center
 	text-decoration: underline
 	color: $text
+	text-transform: uppercase
 
 .column-container
 	display: flex
@@ -33,7 +42,7 @@ h2
 .create-column
 	margin: 0 20px
 	padding: 7px
-	background-color: $background
+	@extend .buttons
 
 /* Card */
 ul
@@ -42,7 +51,7 @@ ul
 
 	li
 		list-style: none
-		background-color: #FFF
+		background-color: $card
 		position: relative
 		min-height: 15vh
 
@@ -50,11 +59,14 @@ ul
 	position: absolute
 	top: 10px
 	right: 10px
-	background-color: $background
+	@extend .buttons
 
 .card-description
 	padding: 15px
 
 .add-card
 	padding: 7px
-	background-color: $background
+	@extend .buttons
+
+.card-placeholder
+	background: rgba(255, 255, 255, 0.5)
